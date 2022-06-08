@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/todo.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="works__to-do-list work">
+    <div class="todo-list">
+       <div class="todo-list__wrapper-grey">
+          <div class="container">
+             <div class="todo-list__body">
+                <div class="todo-list__body-head">
+                   <div class="todo-list__title">
+                      <h2>
+                         <span>TO DO LIST</span>
+                      </h2>
+                   </div>
+                   <div class="todo-list__select select">
+                      <div class="select__wrapper">
+                         <div class="select__button">
+                            <p id="select">Все</p>
+                            <img
+                               src="/img/icons/arrow.svg"
+                               alt=""
+                            />
+                         </div>
+                         <div class="select__list">
+                            <div
+                               class="select__item active"
+                               onclick="allItems()"
+                            >
+                               <article>Все</article>
+                               <img
+                                  src="./img/icons/check.svg"
+                                  alt=""
+                               />
+                            </div>
+                            <div
+                               class="select__item"
+                               onclick="onlyUnActive()"
+                            >
+                               <article>Выполненные</article>
+                               <img
+                                  src="./img/icons/check.svg"
+                                  alt=""
+                               />
+                            </div>
+                            <div
+                               class="select__item"
+                               onclick="onlyActive()"
+                            >
+                               <article>В работе</article>
+                               <img
+                                  src="./img/icons/check.svg"
+                                  alt=""
+                               />
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="todo-list__input">
+                   <input
+                      id="input"
+                      type="text"
+                      placeholder="Поле ввода"
+                   />
+                   <button class="todo-list__input-btn"></button>
+                </div>
+                <div class="todo-list__items"></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+  
+  <script src="./todoList.js"></script>
+</body>
+</html>
